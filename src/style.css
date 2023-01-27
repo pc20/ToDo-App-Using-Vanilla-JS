@@ -1,0 +1,90 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'sans-serif' monospace;
+    background-color: darkgray;
+}
+#container{
+    height: auto;
+    width: 70%;
+    margin: 1% 10%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* container for toDo image and type box */
+#typeBox{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* input box  */
+#input-text {
+    font-size: 40pt;
+    width: 97%;
+    padding-top: 7px;
+}
+#input-text::placeholder {
+    opacity: 0.2;
+}
+/* add button to add item */
+#add-btn:active {
+    transform: scale(0.80);
+    border-radius: 50;
+}
+
+/* common classes */
+.default-margin{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+.hide{
+    border: hidden;
+    outline: none;
+    background-color: transparent;
+}
+
+.bottom-line{
+    border-radius: 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* tick image and line */
+#tick-line{
+    padding: 5px 0px;
+    border-radius: 0%;
+    display: flex;
+    justify-content: space-between;
+    color: lightgray;
+}
+
+/* display List */
+#list{
+    display: flexbox;
+    flex-direction: column;
+    font-size: 20pt;
+    padding-top: 5px;
+
+}
+/* single item */
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.box-margin{
+    margin-left: 2%;
+    padding-top: 6px;
+}
+
+/* delete button */
+.delete-btn:active {
+    transform: scale(0.80);
+    border-radius: 50;
+}
+

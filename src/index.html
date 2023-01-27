@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo app</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <br>
+        <!-- container for user input to type todoItem -->
+        <div class="default-margin" id="typeBox">
+            <!-- image of todoApp -->
+            <div><img src="./icons8-todo-list-100.png" width="70" height="70"></div>
+            <!-- text input -->
+            <div>
+                <input class="hide" id="input-text" type="text" placeholder="Type your ToDo Item" 
+                value = "" oninput="showAddSign(this.value)">
+            </div>
+            <!-- button to add item in list -->
+            <button class="hide" id="add-btn" type="submit" onclick="addItem()">
+                <img id="add-sign" src="./icons8-add-32.png" width="50" height="50" hidden="hidden">
+            </button>   
+        </div>
+            
+        <div class="default-margin bottom-line" id="tick-line">
+            <!-- tick image showing to click to complete the task -->
+            <span>
+                <img src="./icons8-double-tick-24.png" height="20">
+                Complete all task
+            </span>
+            <!-- span to show delete btn will be displayed here -->
+            <span style="padding-top: 4px;">Clear completed </span> 
+        </div>
+
+        <!-- container to diplay item -->
+        <div class="default-margin" id="show-items">
+            <div id="list">
+                <!-- <div class="list-item">
+                    <div class="box-margin">
+                        <input type="checkbox">
+                        Please add some task to test App
+                    </div>
+                    
+                    <button class="hide delete-btn" type="submit" onclick="deleteItem(this)" hidden="hidden">
+                        <img id="delete-img" src="./icons8-cancel-50.png" width="30" height="30">
+                    </button>   
+                </div> -->
+            </div>
+        </div>
+        <div class="default-margin">
+            <span id="left-task">
+                0 tasks left
+            </span>
+        </div>
+    </div>
+</body>
+</html>
