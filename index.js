@@ -110,7 +110,7 @@ function createBtnTag(){
 //add image to button
 function createImageTag(){
     let img = document.createElement("img");
-    img.setAttribute("src","./icons8-cancel-50.png");
+    img.setAttribute("src","./images/icons8-cancel-50.png");
     img.setAttribute("width","30");
     img.setAttribute("height","30");
     return img;
