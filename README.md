@@ -5,4 +5,6 @@ It provides following functionality:
 1. Add a Item to list.
 2. Check box for completed items
 3. Delete button for delete completed items.
-You can run the code by downloading the code from github, extract it and open index.html in browser.
+
+<h2> Link to site https://pc20.github.io/ToDo-App-Using-Vanilla-JS/ </h2>
+<h3>You can run the code by downloading the code from github, extract it and open index.html in browser.</h3>
